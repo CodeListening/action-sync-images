@@ -34,5 +34,8 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://docker.io/hslr/sun-panel:1.4.0 docker://registry.cn-hangzhou.aliyuncs.com/wuzhongyu/sun-panel:1.4.0
+        skopeo copy docker://docker.io/golang:alpine docker://registry.cn-hangzhou.aliyuncs.com/wuzhongyu/golang:alpine
+        skopeo copy docker://docker.io/alpine:latest docker://registry.cn-hangzhou.aliyuncs.com/wuzhongyu/alpine:latest
+        skopeo copy docker://docker.io/node:18 docker://registry.cn-hangzhou.aliyuncs.com/wuzhongyu/node:18
+        skopeo copy docker://docker.io/nginx:alpine docker://registry.cn-hangzhou.aliyuncs.com/wuzhongyu/nginx:alpine
  
